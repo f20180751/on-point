@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>On Point</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .col-xs-3 {
+					min-width: 0;
+					width: auto;
+					display: inline;
+      }	
+      ::-webkit-datetime-edit { padding: 1em; }
+      /* ::-webkit-datetime-edit-fields-wrapper { background: silver; } */
+      
+      .myClickState {
+        border-color: lime;
+      }
+
+      .date:active {
+          border-color: red;   
+      }
+      
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong style="font-size: 2.6rem;"
+                >P
+                <span style="color: rgb(245, 106, 107);"
+                  ><sup style="font-size: 2.6rem;">O</sup></span
+                >
+                I
+                <span style="color: rgb(245, 106, 107);"
+                  ><sup style="font-size: 2.6rem;">N</sup></span
+                >
+                T</strong
+              ></a
+            >
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-snapchat-ghost"
+                  ><span class="label">Snapchat</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Section -->
+          <div style="margin-top:2rem;" style="text-align: center;">
+            <h1 style="text-align: center;">search for news here</h1>
+          </div>
+          <div style="margin-top: 4rem;" id="container-main"class="wrapper row mb-5">
+            
+          
+            <div id="first-col" class="row col-md-6 col-lg-6 col-12 col-xs-3" >
+              
+                <div class="form">
+                  <a href="#"><h2>Search by Keyword</h2></a>
+
+                  <label for="key1">Keyword 1</label>
+                  <input id="key1" placeholder="" name="key1"  size="40%" type="text"  class="search-field form-control" >
+      
+                  <label for="key2">Keyword 2</label>
+                  <input id="key2" placeholder="(optional)" name="key2" size="40%" type="text"  class="search-field form-control" >
+      
+                  <label for="key3">Keyword 3</label>
+                  <input id="key3" placeholder="(optional)" name="key3" size="40%" type="text"  class="search-field form-control" >
+      
+                  <label for="Date-from">Date(from)</label>
+                  <input class="date" type="date" id="Date-from" name="Date-from">
+
+                  <label for="Date-to">Date(to)</label>
+                  <input class="date" type="date" id="Date-to" name="Date-to">
+
+                  <div id="submit">
+                    <div style="margin: 1rem;" id="submit">
+                    <input  onclick="" value=" SEARCH" type="submit" class="btn btn-success btn-lg"></input>
+                  </div>
+                </div>
+                          
+                </div>
+              
+            </div>
+
+
+            <div style="margin-left: 0rem;" id="second-col" class="row col-md-6 col-lg-6 col-12 col-xs-3" >
+              
+              <div class="form">
+                <a href="#"><h2>Upload article or paste link</h2></a>
+                <label for="url">URL</label>
+                <input id="url" placeholder="" name="url" size="40%" type="text"  class="search-field form-control" >
+      
+                <h3 style="margin-top: auto;">or</h3>
+                
+              
+                  <div class="comment " style="margin:auto;">
+                    <label for="w3review">Paste Article</label>
+                      <textarea class="textinput" placeholder="paste here..."></textarea>
+                  </div>
+      
+                <label style="margin-top:0.7rem ;" for="product_Picture">Upload Article</label>
+                <form style="margin-top:0.7rem ;"   action="updateSellerPic.php" method="post" enctype="multipart/form-data"> 
+                  <input style="margin-top:0.7rem ;" type="file" name="pic" required></input>
+                  <input style="margin-top:0.7rem ;" type="hidden" value="##sid"></input><br>
+                
+                </form>
+                <div id="submit">
+                  <div style="margin: 1rem;" id="submit">
+                  <input  onclick="" value="SEARCH" type="submit" class="btn btn-success btn-lg"></input>
+                </div>
+              </div>         
+              </div>
+            </form>
+            </div>
+            
+                
+        </div>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Results</h2>
+            </header>
+            <!-- keeps the grip system intact -->
+            <div class="posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic01.jpg" alt=""
+                /></a>
+                <h3>Interdum aenean</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button btn-small">Biased RW</a></li>
+                  <li><a href="#" class="button">60% true</a></li>
+                </ul>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic02.jpg" alt=""
+                /></a>
+                <h3>Nulla amet dolore</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic03.jpg" alt=""
+                /></a>
+                <h3>Tempus ullamcorper</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic04.jpg" alt=""
+                /></a>
+                <h3>Sed etiam facilis</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic05.jpg" alt=""
+                /></a>
+                <h3>Feugiat lorem aenean</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic06.jpg" alt=""
+                /></a>
+                <h3>Amet varius aliquam</h3>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                  lorem feugiat tempus aliquam.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="process.html">Aim</a></li>
+
+              <li>
+                <span class="opener">Try It</span>
+                <ul>
+                  <li><a href="try-it.html">By Url</a></li>
+                  <li><a href="try-it.html">By upload</a></li>
+                  <li><a href="try-it.html">Advanced Search</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>About Us</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Sarvesh is a cool nibba- Room:106
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Amarjeet is the OG- Room:110
+                </p>
+                
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>
+              A duo with interest in web development and a fervour for solving
+              real problems with machine learning
+            </p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">onpoint@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">(000) 000-0000</li>
+              <li class="icon solid fa-home">
+                BITS Pilani- Goa Campus<br />
+                Sancoale-403726
+              </li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; All Rights reserved
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js">
+    $('.date').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('myClickState');
+    });</script>
+  </body>
+</html>

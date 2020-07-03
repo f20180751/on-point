@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>On Point</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script> -->
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>
+
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin: 1rem;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+    </style>
+  </head>
+  <!-- <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script> -->
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong style="font-size: 2.6rem;"
+                >P
+                <span style="color: rgb(245, 106, 107);"
+                  ><sup style="font-size: 2.6rem;">O</sup></span
+                >
+                I
+                <span style="color: rgb(245, 106, 107);"
+                  ><sup style="font-size: 2.6rem;">N</sup></span
+                >
+                T</strong
+              ></a
+            >
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-snapchat-ghost"
+                  ><span class="label">Snapchat</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Banner -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <!-- <h1>
+                  "The Truth is Rarely Pure, often decitous, and Never
+                  Simple"<br />
+                </h1> -->
+                <!-- <p>A free and fully responsive site template</p> -->
+              </header>
+              <h3 style="color: #b5b4c2;">
+                This is an <span style="color: rgb(245, 106, 107); " >AI-based news refiner</span>, which provides the
+                reader with <span style="color: #3D4449; " >a credibility rating</span>, <span style="color: rgb(245, 106, 107); " >political leaning</span> and
+                <span style="color: #3D4449;; " >news
+                  articles free of slurs/abuse 
+                  </span> 
+              </h3>
+              <h3 class="hidden-para" style="margin-top:2rem" >
+               <span  style="color: #b5b4c2;"> We compare various news sources
+                with verified, <span style="color: rgb(245, 106, 107); " >standardized news sources</span> like Reuters to provide
+                the best possible information for our readers. This process is <span style="color: #3D4449; " >automated</span>
+                 and has no human interference, hence it is <span style="color: rgb(245, 106, 107); " >free of
+                  human bias</span> . Use us for authentic, real news that you can trust.</span>
+              </h3>
+              <ul class="actions">
+                <li><a href="try-it.html" class="button big">Try It </a></li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section -->
+
+          <section id="features">
+            <div
+              class="row section-intro group container projects animate-this"
+            >
+              <div class="col-twelve with-bottom-line">
+                <h2 class="">
+                  Parameters we will rate an article on:
+                </h2>
+                <div>
+                  
+                </div>
+                <div class="row some-item" data-aos="fade-up">
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">01.</h2>
+                      <h4>Clickbait</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">02.</h2>
+                      <h4>Toxicity</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">03.</h2>
+                      <h4>Obscenity</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">04.</h2>
+                      <h4>Racism</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">05.</h2>
+                      <h4>Insults</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <h2 style="color: rgb(245, 106, 107); ;">06.</h2>
+                      <h4>Threats</h4>
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+                <div id="container-main"class="wrapper row mb-5">
+     
+                  <div id="first-col" class="row col-md-6 col-lg-6 col-12 col-xs-3" >
+              
+                          
+                      </div>
+                      <!-- row col-md-6 col-lg-6 col-12 -->
+                  </div>
+                  <div id="second-col" class="row col-md-6 col-lg-6 col-12 col-xs-3" >
+                    
+                    
+                      
+            
+                  <!--ADD Button-->
+            
+                    
+                      
+              </div>
+            </div>
+
+          <!-- Section -->
+          
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="process.html">Aim</a></li>
+
+              <li>
+                <span class="opener">Try It</span>
+                <ul>
+                  <li><a href="try-it.html">By Url</a></li>
+                  <li><a href="try-it.html">By upload</a></li>
+                  <li><a href="try-it.html">Advanced Search</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>About Us</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Sarvesh is a cool nibba- Room:106
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Amarjeet is the OG- Room:110
+                </p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>
+              A duo with interest in web development and a fervour for solving
+              real problems with machine learning
+            </p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">onpoint@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">(000) 000-0000</li>
+              <li class="icon solid fa-home">
+                BITS Pilani- Goa Campus<br />
+                Sancoale-403726
+              </li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; All Rights reserved
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js">
+    AOS.init({
+  duration: 1200,
+})
+    
+    // function s() {
+    //           var x = document.getElementById("container-main");
+    //           if (x.style.display === "none") {
+    //             x.style.display = "flex";
+    //           } else {
+    //             x.style.display = "none";
+    //           }
+    //         }</script>
+    
+  </body>
+</html>
